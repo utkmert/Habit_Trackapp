@@ -21,8 +21,11 @@ A simple and user-friendly habit tracking web application built with HTML, CSS, 
 ## 📁 Proje Yapısı / Project Structure
 
 --- habit-tracker/
+
 ├── index.html # Ana HTML dosyası / Main HTML file
+
 ├── style.css # Stil dosyası / Styling (themes, layout)
+
 └── script.js # Tüm JS mantığı / JavaScript functionality
 
 
