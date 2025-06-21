@@ -1,0 +1,162 @@
+:root {
+  --primary: #4caf50;
+  --primary-dark: #388e3c;
+  --bg: #f0f0f0;
+  --card: #ffffff;
+  --text: #222;
+  --radius: 12px;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+#add-habit-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#habit-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#add-habit-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+#habit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.habit-card {
+  background: var(--card);
+  padding: 15px;
+  border-left: 5px solid var(--primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.habit-card h3 {
+  margin: 0 0 10px;
+}
+
+.days {
+  display: flex;
+  gap: 8px;
+}
+
+.day {
+  width: 32px;
+  height: 32px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.day.checked {
+  background: var(--primary);
+  color: white;
+}
+
+.progress-bar {
+  margin-top: 12px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--primary);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.card-actions {
+  margin-top: 10px;
+}
+
+.card-actions button {
+  background: #eee;
+  border: none;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.card-actions button:hover {
+  background: #ddd;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #222;
+  color: #eee;
+}
+
+body.dark-mode .habit-card {
+  background: #333;
+}
+
+body.dark-mode .day {
+  background: #555;
+  color: #eee;
+}
+
+body.dark-mode .day.checked {
+  background: #81c784;
+  color: white;
+}
+
+body.dark-mode .progress-bar {
+  background: #444;
+}
