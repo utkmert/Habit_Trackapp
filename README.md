@@ -1,5 +1,7 @@
 # 🌱 Habit TrackApp
 
+Live link of Project --> https://utkmert.github.io/Habit_Trackapp/
+
 Kullanıcıların günlük alışkanlıklarını takip edebileceği, basit ve kullanıcı dostu bir web uygulamasıdır. HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
 
 A simple and user-friendly habit tracking web application built with HTML, CSS, and JavaScript.
