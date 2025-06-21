@@ -1,4 +1,4 @@
-# 🌱 Habit Tracker
+# 🌱 Habit TrackAPP
 
 Kullanıcıların günlük alışkanlıklarını takip edebileceği, basit ve kullanıcı dostu bir web uygulamasıdır. HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
 
